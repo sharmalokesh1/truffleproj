@@ -1,0 +1,34 @@
+Install Truffle:
+
+npm install -g truffle
+
+
+Create a Project:
+
+truffle init
+cd <project_name>
+
+
+Directory Structure:
+
+Configure truffle-config.js:
+
+
+Write Smart Contracts:
+
+
+Migrate Contracts:
+
+truffle migrate
+
+
+Interact with Contracts:
+
+truffle console
+
+
+Write Tests:
+
+
+truffle test
+

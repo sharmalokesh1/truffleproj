@@ -1,0 +1,49 @@
+To write and compile a Solidity smart contract file using Truffle, follow these steps:
+
+Create a Truffle Project:
+
+truffle init
+cd <project_name>
+
+
+
+
+Write a Solidity Smart Contract:
+
+pragma solidity ^0.8.0;
+
+contract MyContract {
+    uint256 public myNumber;
+
+    constructor(uint256 _initialNumber) {
+        myNumber = _initialNumber;
+    }
+
+    function setNumber(uint256 _newNumber) public {
+        myNumber = _newNumber;
+    }
+}
+
+
+Configure Truffle Compiler:
+
+module.exports = {
+  // ... other configurations
+
+  compilers: {
+    solc: {
+      version: "^0.8.0", 
+    },
+  },
+};
+
+
+Compile the Smart Contract:
+
+truffle compile
+
+
+Verify Compilation Output:
+
+
+
